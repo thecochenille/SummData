@@ -6,6 +6,9 @@ stat = Continuous()
 #read txt file with numbers 
 stat.read_data_file("numbers.txt")
 
+# show number of values 
+stat.show_length()
+
 #calculate mean
 stat.calculate_mean()
 

@@ -1,1 +1,66 @@
-# studious-carnival
+# Summdata
+## Description
+Summdata is a Python package that provides summary statistics from a list of numbers stored in a text file. With Summdata, you can easily compute various statistics, including the number of values, mean, median, mode, and standard deviation of your data.
+
+## Installation
+To install Summdata, go to the folder (summdata/) using the Terminal and run the following
+
+
+```
+pip install .
+
+```
+
+## Usage
+summdata creates a class (Continuous()) from which you can read a txt file (/numbers.txt as file example), and calculate:
+
+- the number of values: `.show_length()`
+- the mean: `.calculate_mean()`
+- the median: `.calculate_median()`
+- the mode: `.calculate_mode()`
+- the standard deviation: `.calculate_stdev()`
+
+
+
+
+## Example
+You can run `example.py`, which provides example of calculations you can do.
+
+```python
+from summdata import Continuous
+
+# instantiate a class called stat
+stat = Continuous()
+
+#read txt file with numbers 
+stat.read_data_file("numbers.txt")
+
+# show number of values 
+stat.show_length()
+
+#calculate mean
+stat.calculate_mean()
+
+#calculate median
+stat.calculate_median()
+
+#calculate mode(s)
+stat.calculate_mode()
+
+#calculate standard deviation
+stat.calculate_stdev()
+
+```
+
+## Progress
+
+This package will be progressively updated to add the additional features:
+- provide a summary of all calculation in one function.
+- calculating variance
+- provide a distribution plot of the data
+- provide summary statistics of categorical data
+
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
