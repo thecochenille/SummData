@@ -1,6 +1,8 @@
 # Summdata
 ## Description
-Summdata is a Python package that provides summary statistics from a list of numbers stored in a text file. With Summdata, you can easily compute various statistics, including the number of values, mean, median, mode, and standard deviation of your data.
+summdata is a Python package that provides summary statistics from a list of numbers stored in a text file. With summdata, you can easily compute various statistics, including the number of values, mean, median, mode, and standard deviation of your data.
+
+summdata has two modules, `SummaryStatistics.py` and `SummaryContinuous`. The former sets up the data set and allows to read the txt file, and the second module contains the fonctions to calculate summary statistics based on continuous data. I created these two modules to add on other features such as treating categorical data later on.
 
 ## Installation
 To install Summdata, go to the folder (summdata/) using the Terminal and run the following

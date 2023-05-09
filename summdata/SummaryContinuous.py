@@ -5,15 +5,7 @@ from .SummaryStatistics import SummaryStatistics
 
 
 class Continuous(SummaryStatistics):
-	"""What does this function do
-
-
-	Attributes:
 	
-
-
-
-	"""
 
 	def __init__(self, mu =0, sigma =1):
 		SummaryStatistics.__init__(self, mu, sigma)
