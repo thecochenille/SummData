@@ -87,16 +87,16 @@ class Continuous(SummaryStatistics):
 	
 		"""
 					
-		uniq_values = []
-		mode_values = []
-		for i in self.data:
-			if i not in uniq_values:
-				uniq_values.append(i)
-			else:
-				mode_values.append(i)
-		self.mode = set(mode_values)
-		
+		counter = 0
+		num = self.data[0]
 
+		for i in self.data:
+			current_frequency = self.data.count(i)
+			if (current_frequency > counter):
+				counter = current_frequency
+				num = i
+
+		self.mode = num
 
 		return self.mode
 
