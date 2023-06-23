@@ -54,6 +54,12 @@ stat.calculate_stdev()
 
 ```
 
+## Versions
+
+### 0.1.1
+
+- Fixed `calculate_mode()`
+
 ## Progress
 
 This package will be progressively updated to add the additional features:
